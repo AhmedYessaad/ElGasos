@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #1f2937, #111827);
+  color: #f9fafb;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #22d3ee;
+  margin-bottom: 30px;
+}
+
+input, button {
+  padding: 12px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+input {
+  background-color: #374151;
+  color: #f1f5f9;
+  border: 1px solid #4b5563;
+  width: 200px;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+#gameArea {
+  display: none;
+  margin-top: 30px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#roleDisplay {
+  margin: 20px;
+  font-size: 1.3rem;
+  color: #facc15;
+  background-color: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px dashed #64748b;
+}
+
+#playerLabel {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #a5f3fc;
+}
+
+#resetButton {
+  display: none;
+  background-color: #10b981;
+}
+
+#resetButton:hover {
+  background-color: #059669;
+}
+
+#credit {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #9ca3af;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+#credit a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#credit a:hover {
+  text-decoration: underline;
+  color: #60a5fa;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

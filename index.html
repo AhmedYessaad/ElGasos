@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🎭 لعبة الجاسوس</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎭 لعبة الجاسوس - Spy Game</h1>
+
+  <div id="setupArea">
+    <label for="playerCount">👥 عدد اللاعبين:</label>
+    <input type="number" id="playerCount" min="3" max="20" value="5" /><br />
+
+    <label for="spyCount">🕵️‍♂️ عدد الجواسيس:</label>
+    <input type="number" id="spyCount" min="1" value="1" /><br />
+
+    <button onclick="startGame()">🚀 ابدأ اللعبة</button>
+    
+    <!-- توقيع باسمك مع رابط فيسبوك -->
+    <footer id="credit">
+      🎮 صُنع بواسطة: <strong>Ahmed Yessaad</strong> –
+      <a href="https://www.facebook.com/share/1Fq6gQkZbh/" target="_blank" rel="noopener noreferrer">Facebook</a>
+    </footer>
+  </div>
+
+  <div id="gameArea">
+    <p id="playerLabel">اللاعب 1</p>
+    <button onclick="revealRole()">👁️‍🗨️ كشف الدور</button>
+    <p id="roleDisplay"></p>
+    <button onclick="nextPlayer()">➡️ التالي</button>
+  </div>
+
+  <button id="resetButton" onclick="resetGame()">🔁 إعادة تعيين اللعبة</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
